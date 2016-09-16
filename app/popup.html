@@ -1,0 +1,161 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/styles/main.css">
+        <script src="scripts/jquery.min.js"></script>
+    </head>
+
+    <body>
+
+        <div class="row" >
+
+            <div id="Servers" class="col-lg-12 panel-box">
+                <div id="Servers-click" class="row">
+                    <div class="col-lg-2">
+                        <i id="icon" class="fa" aria-hidden="true" style="position: relative; top:15px; left:10px"></i>
+                    </div>
+                    <div class="col-lg-3">
+                        <h3 id="title" style="position:relative; bottom: 32px"></h3>
+                    </div>
+                    <i id="Servers-favourite" class="fa" style="position: absolute; top:15px; left: 300px"></h3>
+                </div>
+
+                <div id="Servers-content" class="content">
+
+                    <div id="Servers-table" class="table-responsive content" >
+                        <table class="table table-striped" style="overflow: hideen">
+
+                            <thead>
+                                <tr>
+                                    <th>Server Name</th>
+                                    <th>Players</th>
+                                </tr>
+                            </thead>
+
+                            <tbody id="Servers-table-body">
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12" style="padding-bottom: 15px">
+                        <span style="margin-left: 15px; color: #000;">Only Show Active Servers</span>
+                        <div class="material-switch pull-right" style="margin-right: 50px;">
+                            <input id="activeServers" name="activeServers" type="checkbox"/>
+                            <label for="activeServers" class="label-success" style="top: 10px"></label>
+                        </div>
+                    </div>                   
+                </div>
+
+            </div>
+
+            <div id="Pug" class="col-lg-12 panel-box"> 
+                <div id="Pug-click" class="row">
+                    <div class="col-lg-2">
+                        <i id="Pug-icon" class="fa" aria-hidden="true" style="position: relative; top:15px; left:10px"></i>
+                    </div>
+                    <div class="col-lg-3">
+                        <h3 id="Pug-title" style="position:relative; bottom:32px; left: 55px"></h3>
+                    </div>
+                    <i id="Pug-favourite" class="fa" style="position: absolute; top:5px; left: 300px"></h3>
+                </div>
+            </div>
+
+            <div id="LCTF" class="col-lg-12 panel-box"> 
+                <div id="LCTF-click" class="row">
+                    <div class="col-lg-2">
+                        <i id="LCTF-icon" class="fa" aria-hidden="true" style="position: relative; top:15px; left:10px"></i>
+                    </div>
+                    <div class="col-lg-3">
+                        <h3 id="LCTF-title" style="position:relative; bottom:32px; left: 55px"></h3>
+                    </div>
+                    <i id="LCTF-favourite" class="fa" style="position: absolute; top:15px; left: 300px"></h3>
+                </div>
+
+                <div id="LCTF-content" class="content">
+                    <div id="LCTF-table" class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th>In Queue</th>
+                                <th>In Game</th>
+                            </tr>
+                            </thead>
+                            <tbody id="LCTF-table-body">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Base" class="col-lg-12 panel-box"> 
+                <div id="Base-click" class="row">
+                    <div class="col-lg-2">
+                        <i id="Base-icon" class="fa" aria-hidden="true" style="position: relative; top:15px; left:10px"></i>
+                    </div>
+                    <div class="col-lg-3">
+                        <h3 id="Base-title" style="position:relative; bottom:32px; left: 55px"></h3>
+                    </div>
+                    <i id="Base-favourite" class="fa" style="position: absolute; top:15px; left: 300px"></h3>
+                </div>
+
+                <div id="Base-content" class="content">
+                    <div id="Base-table" class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th>In Queue</th>
+                                <th>In Game</th>
+                            </tr>
+                            </thead>
+                            <tbody id="Base-table-body">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div id="LCTFEU" class="col-lg-12 panel-box"> 
+                <div id="LCTFEU-click" class="row">
+                    <div class="col-lg-2">
+                        <i id="LCTFEU-icon" class="fa" aria-hidden="true" style="position: relative; top:15px; left:10px"></i>
+                    </div>
+                    <div class="col-lg-3">
+                        <h3 id="LCTFEU-title" style="position:relative; bottom:32px; left: 55px"></h3>
+                    </div>
+                    <i id="LCTFEU-favourite" class="fa" style="position: absolute; top:15px; left: 300px"></h3>
+                </div>
+
+                <div id="LCTFEU-content" class="content">
+                    <div id="LCTFEU-table" class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th>In Queue</th>
+                                <th>In Game</th>
+                            </tr>
+                            </thead>
+                            <tbody id="LCTFEU-table-body">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div id="help" class="col-lg-12 text-center" style="top:100px; font-weight: bold">
+                <li style="list-style-type: none"><span>- Click the panels to navigate around</li></span>
+                <li style="list-style-type: none"><span>- You may set a default screen by clicking the star</li></span>
+                <li style="list-style-type: none"><span>- Created by <a href="https://forums.playmidair.com/members/petty.506/">PeTtY</a></li></span>
+            </div>
+
+        </div>
+
+    </body>
+    <script src="scripts/background.js"></script>
+</html>

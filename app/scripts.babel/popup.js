@@ -36,6 +36,10 @@ class popup {
         });
     };
 
+    clearCache(){
+        chrome.storage.sync.remove(['servers', 'serverTotal', 'pugs', 'favourite', 'onlyActive']);
+    };
+
     setTitles(){
         const base = this.getSelectedPug('Base');
         const LCTF = this.getSelectedPug('LCTF');
@@ -341,6 +345,10 @@ $(document).ready(function(){
 
     $('#Pug-click').click(function(){
         newpopup.renderPugMenu();
+    });
+
+    $('#clear-cache').click(function(){
+        newpopup.clearCache();
     });
 
 });
